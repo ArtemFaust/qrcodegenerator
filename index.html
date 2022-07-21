@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QrCodeGenerate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="form" id="form">
+            <h1>Генератор QR кодов</h1>
+            <form>
+                <textarea type="text" id="textinput" name="textinput" placeholder="" required></textarea>
+                <button type="button" onclick="generateQRCode()">
+                    Сгенерировать
+                </button>
+            </form>
+        
+            <div id="qrcode-container">
+                <div id="qrcode" class="qrcode"></div>
+                <button type="button" onclick="downloadQR()">Скачать</button>
+            </div>
+        </div>
+        
+        <script src="./qrcode.js" async defer></script>
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
